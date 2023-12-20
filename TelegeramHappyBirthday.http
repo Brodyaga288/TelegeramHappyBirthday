@@ -1,0 +1,6 @@
+@TelegeramHappyBirthday_HostAddress = http://localhost:5100
+
+GET {{TelegeramHappyBirthday_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
