@@ -14,7 +14,7 @@ namespace TelegeramHappyBirthday.Jobs
                 {
                     if (user.HappyBirthday.Minute == DateTime.Now.Minute)
                     {
-                        bot.Happy(user.Id);
+                        await Task.Run(()=>bot.Happy(user.Id));
                     }
                 }
             }  

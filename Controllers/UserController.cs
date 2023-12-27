@@ -18,6 +18,12 @@ namespace TelegeramHappyBirthday.Controllers
             }
 
         }
+        [HttpGet("Start")]
+        public IActionResult Start()
+        {
+            StartSheduler();
+            return Ok();
+        }
         [HttpGet("{id}")]
         public IActionResult Get_Id(int id)
         {
